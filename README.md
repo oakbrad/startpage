@@ -2,6 +2,8 @@
 
 A simple CSS site that shows my common links, the date / time, and a RSS feed (I use https://rssmix.com to combined several social feeds).
 
+![screenshot](https://raw.githubusercontent.com/oakbrad/startpage/master/sshot1.png)
+
 ## Using it Yourself
 
 * Install pywal and generate a color scheme. https://github.com/dylanaraps/pywal/wiki

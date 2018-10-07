@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>start</title>
+
+	<script src="rss-parser.min.js"></script>
+	<script src="moment.min.js"></script>
+	<script src="main.js"></script>
+
+</head>
+
+<body>
+<link rel="stylesheet" href="main.css">
+
+  <div class="center"> &nbsp; </div>
+	<div class="center">
+		<div class="box">
+			<h1 class="title">home</h1>
+			<ul>
+				<li><span><a href="https://hass.boooooom.com:8123/lovelace/home">hass</a></span></li>
+				<li><span><a href="http://192.168.0.5:9002/">lms</a></span></li>
+				<li><span><a href="https://app.plex.tv/desktop">plex</a></span></li>
+				<li><span><a href="https://192.168.0.2:8006/">proxmox</a></span></li>
+				<li><span><a href="http://192.168.0.6:9000/#/containers">docker</a></span></li>
+        <li><span><a href="http://wiki.lan">wiki.lan</a></span></li>
+			</ul>
+		</div>
+		<div class="box">
+			<h1 class="title">read</h1>
+			<ul>
+				<li><span><a href="https://rss.boooooom.com">rss</a></span></li>
+				<li><span><a href="https://readlater.boooooom.com">read later</a></span></li>
+				<li><span><a href="https://books.boooooom.com">books</a></span></li>
+				<li><span><a href="https://www.nytimes.com">nyt</a></span></li>
+				<li><span><a href="https://www.washingtonpost.com">wapo</a></span></li>
+			</ul>
+		</div>
+		<div class="box">
+			<h1 class="title">boooooom</h1>
+			<ul>
+				<li><span><a href="https://cloud.boooooom.com">cloud</a></span></li>
+				<li><span><a href="https://cloud.boooooom.com/index.php/apps/calendar/">calendar</a></span></li>
+				<li><span><a href="https://cloud.boooooom.com/index.php/apps/tasks/#/collections/today">todo</a></span></li>
+        <li><span><a href="https://https://pods.boooooom.com/podcastChannels.view?">podcasts</a></span></li>
+				<li><span><a href="https://blessyourhe.art">recipes</a></span></li>
+				<li><span><a href='https://cloud.boooooom.com/index.php/apps/bookmarks/#all'>bookmarks</a></span></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="center">
+		<div class="timebox">
+			<div id="clock"> </div>
+		</div>
+		<div class="timebox">
+			<div id="date"></div>
+		</div>
+	</div>
+
+	<div class="center">
+		<div class="box">
+			<h1 class="title">feed</h1>
+			<ul>
+				<div id="feed"> </div>
+			</ul>
+		</div>
+	</div>
+
+  <div class="center"> &nbsp; </div>
+<!-- Time -->
+<script>
+	var current_hour = new moment().format("HH");
+	var current_min = new moment().format("mm");
+	document.getElementById('clock').innerHTML += current_hour +' <font class="blink"><b>:</b></font> ' + current_min;
+
+	var current_day = new moment().format("D");
+	var current_month = new moment().format("M")
+	var current_year = new moment().format("YY")
+	document.getElementById('date').innerHTML += current_month + ' <font class="blink"><b>/</b></font> ' + current_day + ' <font class="blink"><b>/</b></font> ' + current_year;
+</script>
+
+</body></html>

@@ -1,19 +1,15 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>start</title>
 
-	<script src="rss-parser.min.js"></script>
-	<script src="moment.min.js"></script>
-	<script src="main.js"></script>
-
+	<link rel="stylesheet" href="main.css">
 </head>
 
 <body>
-<link rel="stylesheet" href="main.css">
-
-  <div class="center"> &nbsp; </div>
+	<div class="center"> &nbsp; </div>
 	<div class="center">
 		<div class="box">
 			<h1 class="title">home</h1>
@@ -23,7 +19,7 @@
 				<li><span><a href="https://app.plex.tv/desktop">plex</a></span></li>
 				<li><span><a href="https://192.168.0.2:8006/">proxmox</a></span></li>
 				<li><span><a href="http://192.168.0.6:9000/#/containers">docker</a></span></li>
-        <li><span><a href="http://wiki.lan">wiki.lan</a></span></li>
+   			    <li><span><a href="http://wiki.lan">wiki.lan</a></span></li>
 			</ul>
 		</div>
 		<div class="box">
@@ -42,7 +38,7 @@
 				<li><span><a href="https://cloud.boooooom.com">cloud</a></span></li>
 				<li><span><a href="https://cloud.boooooom.com/index.php/apps/calendar/">calendar</a></span></li>
 				<li><span><a href="https://cloud.boooooom.com/index.php/apps/tasks/#/collections/today">todo</a></span></li>
-        <li><span><a href="https://https://pods.boooooom.com/podcastChannels.view?">podcasts</a></span></li>
+        		<li><span><a href="https://https://pods.boooooom.com/podcastChannels.view?">podcasts</a></span></li>
 				<li><span><a href="https://blessyourhe.art">recipes</a></span></li>
 				<li><span><a href='https://cloud.boooooom.com/index.php/apps/bookmarks/#all'>bookmarks</a></span></li>
 			</ul>
@@ -67,17 +63,10 @@
 		</div>
 	</div>
 
-  <div class="center"> &nbsp; </div>
-<!-- Time -->
-<script>
-	var current_hour = new moment().format("HH");
-	var current_min = new moment().format("mm");
-	document.getElementById('clock').innerHTML += current_hour +' <font class="blink"><b>:</b></font> ' + current_min;
+	<div class="center"> &nbsp; </div>
 
-	var current_day = new moment().format("D");
-	var current_month = new moment().format("M")
-	var current_year = new moment().format("YY")
-	document.getElementById('date').innerHTML += current_month + ' <font class="blink"><b>/</b></font> ' + current_day + ' <font class="blink"><b>/</b></font> ' + current_year;
-</script>
-
-</body></html>
+	<script src="rss-parser.min.js"></script>
+	<script src="moment.min.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>

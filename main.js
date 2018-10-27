@@ -18,3 +18,14 @@ parser.parseURL(CORS_PROXY + 'http://www.rssmix.com/yourcombinedfeeds.xml', func
         }
     })
 })
+
+
+// Time Logic
+var current_hour = new moment().format("HH");
+var current_min = new moment().format("mm");
+document.getElementById('clock').innerHTML += current_hour +' <font class="blink"><b>:</b></font> ' + current_min;
+
+var current_day = new moment().format("D");
+var current_month = new moment().format("M");
+var current_year = new moment().format("YY");
+document.getElementById('date').innerHTML += current_month + ' <font class="blink"><b>/</b></font> ' + current_day + ' <font class="blink"><b>/</b></font> ' + current_year;
